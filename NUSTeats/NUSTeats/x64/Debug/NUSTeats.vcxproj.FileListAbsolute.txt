@@ -1,0 +1,3 @@
+C:\My Doom SE\NUSTeats\NUSTeats\x64\Debug\raylib.dll
+C:\My Doom SE\NUSTeats\NUSTeats\x64\Debug\glfw3.dll
+C:\My Doom SE\NUSTeats\NUSTeats\NUSTeats\x64\Debug\NUSTeats.vcxproj.Up2Date
