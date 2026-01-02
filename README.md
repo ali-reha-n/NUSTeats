@@ -17,18 +17,25 @@ In randomizer mode, the user only needs to enter a budget. The system then direc
 
 **User Manual**
 - **Step 1:** Running the Program
+  
 When the program is run in a Windows console, the NUSTEats logo is displayed using a star pattern, followed by a welcome message.
 - **Step 2:** Entering the Budget
+  
 The user is asked to enter their available budget in Pakistani Rupees. This value is used to check whether the recommended food item is affordable or not.
 - **Step 3:** Selecting Recommendation Mode
+  
 The user is then asked to choose between Personalized mode and Randomizer mode by entering the corresponding number.
 - **Step 4A:** Using Personalized Mode
+  
 If Personalized mode is selected, the user is prompted to choose a food category and a café. The program displays the selected cafe and kind of food in blue color. If the user wishes to deselect then he can enter the serial number of of the cafe and kind of food again, but if the user is certain in his choices, then he can proceed by entering 0 as input for both food and cafe after they have been selected. After the selections are made, the system displays a suitable food recommendation.
 - **Step 4B:** Using Randomizer Mode
+  
 If Randomizer mode is selected, the system immediately displays a food recommendation without asking for further input.
 - **Step 5:** Budget Warning
+  
 If the recommended food item costs more than the user’s budget, a warning message appears on the screen in red text to clearly indicate that the item is over budget.
 - **Step 6:** Ending the Program
+  
 After displaying the recommendation, the program shows a closing message and ends when the user presses a key.
 User Interface Design
 The program uses a white background to keep the interface clean and easy to read. The NUSTeats logo is shown in dark blue to highlight the program name, while normal text appears in black. Warning messages are displayed in red so they are easily noticeable.
