@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family: 'Anton';
+    src: url('Anton-Regular.ttf') format('truetype');
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Anton';
+    font-size: 4rem;
+    color: #0025cc;
+    margin-top: 10%;
+}
+
+p {
+    color: #ffffff;
+}
+
+button {
+    height: 5rem;
+    width: 13rem;
+    border: none;
+    background-color: #1f48ff;
+    font-size: 1rem;
+    border-radius: 3rem;
+}
+
+button:hover {
+    background-color: #0025cc;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+#R1 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 13rem;
+    width: 22rem;
+    top: 0vw;
+    left: 0vw;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+#R2 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 13rem;
+    width: 22rem;
+    bottom: 7vw;
+    right: 0vw;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+#R3 {
+    position: absolute;
+    background-color: #1f48ff;
+    height: 12rem;
+    width: 12rem;
+    top: 7vw;
+    left: 0vw;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+#R4 {
+    position: absolute;
+    background-color: #1f48ff;
+    height: 12rem;
+    width: 15rem;
+    bottom: 0vw;
+    right: 0vw;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+#R5 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 0.5rem;
+    width: 30rem;
+    right: 0;
+    top: 5rem;
+}
+#R6 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 0.25rem;
+    width: 23rem;
+    right: 0;
+    top: 6.5rem;
+}
+
+#R7{
+    position: absolute;
+    background-color: #0025cc;
+    height: 0.5rem;
+    width: 30rem;
+    left: 0;
+    bottom: 5rem;
+}
+
+#R8{
+    position: absolute;
+    background-color: #0025cc;
+    height: 0.25rem;
+    width: 23rem;
+    left: 0;
+    bottom: 6.5rem;
+}
+
+#C1{
+    position: absolute;
+    height: 4rem;
+    width: 2rem;
+    border-radius: 0 2rem 2rem 0;
+    background-color: #0025cc;
+    left:0;
+    bottom: 8rem;
+}
+
+#C2{
+    position: absolute;
+    height: 4rem;
+    width: 2rem;
+    border-radius: 2rem 0 0 2rem;
+    background-color: #0025cc;
+    right:0;
+    top: 8rem;
+}
+
+#C3{
+    position: absolute;
+    height: 2rem;
+    width: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: #ffffff;
+    left:0;
+    bottom: 9rem;
+}
+
+#C4{
+    position: absolute;
+    height: 2rem;
+    width: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #ffffff;
+    right:0;
+    top: 9rem;
+}
