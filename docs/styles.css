@@ -1,19 +1,19 @@
-
+/* Font */
 @font-face {
     font-family: 'Anton';
     src: url('Anton-Regular.ttf') format('truetype');
 }
 
-h1 {
+/* -------------- */
+/* MAIN PAGE CODE */
+/*--------------- */
+
+#logo {
     text-align: center;
     font-family: 'Anton';
     font-size: 4rem;
     color: #0025cc;
-    margin-top: 10%;
-}
-
-p {
-    color: #ffffff;
+    margin-top: 10rem;
 }
 
 button {
@@ -21,6 +21,7 @@ button {
     width: 13rem;
     border: none;
     background-color: #1f48ff;
+    color: #ffffff;
     font-size: 1rem;
     border-radius: 3rem;
 }
@@ -37,6 +38,10 @@ button:hover {
     gap: 1.5em;
 }
 
+
+/* Shapes for beautification */
+
+/* top left large rectangle*/
 #R1 {
     position: absolute;
     background-color: #0025cc;
@@ -47,6 +52,8 @@ button:hover {
     border-top-right-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
+
+/* bottom right large rect*/
 #R2 {
     position: absolute;
     background-color: #0025cc;
@@ -57,6 +64,8 @@ button:hover {
     border-top-left-radius: 10rem;
     border-bottom-left-radius: 10rem;
 }
+
+/*top left small rect*/
 #R3 {
     position: absolute;
     background-color: #1f48ff;
@@ -67,6 +76,8 @@ button:hover {
     border-top-right-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
+
+/* bottom right small rectangle*/
 #R4 {
     position: absolute;
     background-color: #1f48ff;
@@ -77,6 +88,8 @@ button:hover {
     border-top-left-radius: 10rem;
     border-bottom-left-radius: 10rem;
 }
+
+/*top right longer line*/
 #R5 {
     position: absolute;
     background-color: #0025cc;
@@ -85,6 +98,8 @@ button:hover {
     right: 0;
     top: 5rem;
 }
+
+/* top right shorter line*/
 #R6 {
     position: absolute;
     background-color: #0025cc;
@@ -94,6 +109,7 @@ button:hover {
     top: 6.5rem;
 }
 
+/* bottom left longer line*/
 #R7{
     position: absolute;
     background-color: #0025cc;
@@ -103,6 +119,7 @@ button:hover {
     bottom: 5rem;
 }
 
+/* bottom left shorter line */
 #R8{
     position: absolute;
     background-color: #0025cc;
@@ -112,7 +129,10 @@ button:hover {
     bottom: 6.5rem;
 }
 
-#C1{
+/* bottom left circle
+One is blue and has a white smaller circle on top to make it look hollow
+*/
+#C1{/*blue circle*/
     position: absolute;
     height: 4rem;
     width: 2rem;
@@ -122,17 +142,7 @@ button:hover {
     bottom: 8rem;
 }
 
-#C2{
-    position: absolute;
-    height: 4rem;
-    width: 2rem;
-    border-radius: 2rem 0 0 2rem;
-    background-color: #0025cc;
-    right:0;
-    top: 8rem;
-}
-
-#C3{
+#C3{ /* white circle*/
     position: absolute;
     height: 2rem;
     width: 1rem;
@@ -142,7 +152,20 @@ button:hover {
     bottom: 9rem;
 }
 
-#C4{
+/* top right circle
+One is blue and has a white smaller circle on top to make it look hollow
+*/
+#C2{/* blue circle*/
+    position: absolute;
+    height: 4rem;
+    width: 2rem;
+    border-radius: 2rem 0 0 2rem;
+    background-color: #0025cc;
+    right:0;
+    top: 8rem;
+}
+
+#C4{/* white circle */
     position: absolute;
     height: 2rem;
     width: 1rem;
@@ -151,3 +174,10 @@ button:hover {
     right:0;
     top: 9rem;
 }
+
+/*  <---------------------END OF MAIN PAGE------------------> */
+
+
+/* --------------
+   |FILTERS PAGE|
+   -------------- */
