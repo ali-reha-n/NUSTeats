@@ -8,12 +8,21 @@
 /* MAIN PAGE CODE */
 /*--------------- */
 
-#logo {
-    text-align: center;
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
     font-family: 'Anton';
     font-size: 4rem;
     color: #0025cc;
-    margin-top: 10rem;
 }
 
 button {
@@ -181,3 +190,79 @@ One is blue and has a white smaller circle on top to make it look hollow
 /* --------------
    |FILTERS PAGE|
    -------------- */
+
+#C5 {
+    position: absolute;
+    height: 10rem;
+    width: 5rem;
+    border-radius: 5rem 0 0 5rem;
+    background-color: #0025cc;
+    right:0;
+    top: 0;
+}
+
+#C6 {
+    position: absolute;
+    height: 5rem;
+    width: 2.5rem;
+    border-radius: 2.5rem 0 0 2.5rem;
+    background-color: #ffffff;
+    right:0;
+    top: 2.5rem;
+}
+
+#C7 {
+    position: absolute;
+    height: 10rem;
+    width: 5rem;
+    border-radius: 0 5rem 5rem 0;
+    background-color: #0025cc;
+    left:0;
+    bottom: 0;
+}
+
+#C8 {
+    position: absolute;
+    height: 5rem;
+    width: 2.5rem;
+    border-radius: 0 2.5rem 2.5rem 0;
+    background-color: #ffffff;
+    left:0;
+    bottom: 2.5rem;
+}
+
+#R9 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 24rem;
+    width: 0.5rem;
+    top: 0;
+    left: 2rem;
+}
+
+#R10 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 20rem;
+    width: 0.25rem;
+    top: 0;
+    left: 2.75rem;
+}
+
+#R11 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 24rem;
+    width: 0.5rem;
+    bottom: 0;
+    right: 2rem;
+}
+
+#R12 {
+    position: absolute;
+    background-color: #0025cc;
+    height: 20rem;
+    width: 0.25rem;
+    bottom: 0;
+    right: 2.75rem;
+}
