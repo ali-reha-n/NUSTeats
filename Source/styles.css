@@ -13,8 +13,6 @@ body {
     height: 100vh;
 
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
 }
@@ -25,7 +23,18 @@ body {
     color: #0025cc;
 }
 
+h2 {
+    font-family: 'Anton';
+    font-size: 2.5rem;
+    color: #0025cc;
+    text-align: left;
+    margin-left: 5rem;
+}
+
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 5rem;
     width: 13rem;
     border: none;
@@ -191,7 +200,18 @@ One is blue and has a white smaller circle on top to make it look hollow
    |FILTERS PAGE|
    -------------- */
 
-#C5 {
+#main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem;
+}
+/* Decorations */
+
+/* top right circle */
+#C5 { /*blue circle*/
     position: absolute;
     height: 10rem;
     width: 5rem;
@@ -201,7 +221,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     top: 0;
 }
 
-#C6 {
+#C6 { /*white circle */
     position: absolute;
     height: 5rem;
     width: 2.5rem;
@@ -211,7 +231,8 @@ One is blue and has a white smaller circle on top to make it look hollow
     top: 2.5rem;
 }
 
-#C7 {
+/* bottom left circle */
+#C7 { /* blue circle*/
     position: absolute;
     height: 10rem;
     width: 5rem;
@@ -221,7 +242,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     bottom: 0;
 }
 
-#C8 {
+#C8 { /* white circle*/
     position: absolute;
     height: 5rem;
     width: 2.5rem;
@@ -231,6 +252,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     bottom: 2.5rem;
 }
 
+/* top longer line */
 #R9 {
     position: absolute;
     background-color: #0025cc;
@@ -240,6 +262,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     left: 2rem;
 }
 
+/* top shorter line*/
 #R10 {
     position: absolute;
     background-color: #0025cc;
@@ -249,6 +272,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     left: 2.75rem;
 }
 
+/* bottom longer line */
 #R11 {
     position: absolute;
     background-color: #0025cc;
@@ -258,6 +282,7 @@ One is blue and has a white smaller circle on top to make it look hollow
     right: 2rem;
 }
 
+/* bottom shorter line*/
 #R12 {
     position: absolute;
     background-color: #0025cc;
@@ -265,4 +290,94 @@ One is blue and has a white smaller circle on top to make it look hollow
     width: 0.25rem;
     bottom: 0;
     right: 2.75rem;
+}
+
+.filterbuttons {
+    background-color: #ffffff;
+    height: 2.5rem;
+    width: 5rem;
+    border-style: groove;
+    border-color: #0025cc;
+    border-width: 0.35rem;
+    font-size: 1.4rem;
+    font-family: 'Anton';
+    color: #0025cc;
+    margin-left: 0.7rem;
+}
+
+.filterbuttons:hover {
+    border-style: solid;
+    border-width:0.35rem;
+    border-color: #1f48ff;
+    background-color: #ffffff;
+}
+
+#budgetrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#caferow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#foodtype {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.startingbutton {
+    background-color: #ffffff;
+    height: 2.5rem;
+    width: 5rem;
+    border-style: groove;
+    border-color: #0025cc;
+    border-width: 0.35rem;
+    font-size: 1.4rem;
+    font-family: 'Anton';
+    color: #0025cc;
+    margin-left: 3rem;
+}
+
+.startingbutton:hover {
+    border-style: solid;
+    border-width:0.35rem;
+    border-color: #1f48ff;
+    background-color: #ffffff;
+}
+
+input {
+    margin-left: 3rem;
+    border: groove;
+    border-width: 0.35rem;
+    border-color: #0025cc;
+    border-radius: 3rem;
+    height: 2.5rem;
+    width: 9rem;
+    text-align: center;
+    color: #1f48ff;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #0025cc;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+input:focus {
+    border: solid;
+    border-width: 0.35rem;
+    border-color: #1f48ff;
 }
