@@ -19,6 +19,29 @@ public class resultsRepository {
                                                List<String> Sub_categories,
                                                Integer budget){
 
+        // Arranging the main_category items in proper format for querying
+        String query_main_categories = "";
+        for(int i=0 ; i<Main_categories.size() ; i++){
+            if(i == 0){
+                query_main_categories += " main_category IN ( \"" + Main_categories.get(i) + "\" ,";
+            }else if( i  == Main_categories.size() - 1){
+                query_main_categories += " \"" + Main_categories.get(i) + "\" )";
+            }else{
+                query_main_categories += " \"" + Main_categories.get(i) + "\",";
+            }
+        }
+
+        //Arranging the sub_category items in proper format for querying
+        String query_sub_categories = "";
+        for(int i=0 ; i<Sub_categories.size() ; i++){
+            if(i == 0){
+                query_sub_categories += " sub_category IN ( \"" + Sub_categories.get(i) + "\" ,";
+            }else if( i  == Sub_categories.size() - 1){
+                query_sub_categories += " \"" + Sub_categories.get(i) + "\" )";
+            }else{
+                query_sub_categories += " \"" + Sub_categories.get(i) + "\",";
+            }
+        }
 
         List<Map<String,Object>> results = null;
         for(String cafe : cafes ){
