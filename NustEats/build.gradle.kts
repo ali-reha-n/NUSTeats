@@ -25,6 +25,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    //Database \ JDBC Implementation
+    implementation("org.springframework.boot:spring-boot-starter-jdbc")
+    runtimeOnly("com.mysql:mysql-connector-j")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<Test> {
