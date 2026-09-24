@@ -23,7 +23,7 @@ public class resultsRepository {
         String query_main_categories = "";
         for(int i=0 ; i<Main_categories.size() ; i++){
             if(i == 0){
-                query_main_categories += " main_category IN ( \"" + Main_categories.get(i) + "\" ,";
+                query_main_categories += "WHERE main_category IN ( \"" + Main_categories.get(i) + "\" ,";
             }else if( i  == Main_categories.size() - 1){
                 query_main_categories += " \"" + Main_categories.get(i) + "\" )";
             }else{
@@ -35,7 +35,7 @@ public class resultsRepository {
         String query_sub_categories = "";
         for(int i=0 ; i<Sub_categories.size() ; i++){
             if(i == 0){
-                query_sub_categories += " sub_category IN ( \"" + Sub_categories.get(i) + "\" ,";
+                query_sub_categories += "AND sub_category IN ( \"" + Sub_categories.get(i) + "\" ,";
             }else if( i  == Sub_categories.size() - 1){
                 query_sub_categories += " \"" + Sub_categories.get(i) + "\" )";
             }else{
@@ -43,10 +43,24 @@ public class resultsRepository {
             }
         }
 
+        //Preparing the part of query for the budget
+        String query_budget = "";
+        if(budget != null){ //add AND with budget if main and sub categories are present
+            query_budget = " AND budget <= " + budget;
+        }else if(budget !=null && query_sub_categories.equals("") && query_main_categories.equals("")){
+            //add when to budget if the main and sub categories are not selected
+            query_budget = " WHERE budget <= " + budget;
+        }
+
+
+
         List<Map<String,Object>> results = null;
         for(String cafe : cafes ){
+            //Adds the cafe name to the results a map to identify where the menu items of which cafe begin
             results.add(Map.of( "Cafe:", cafe));
-            results =  jdbcTemplate.queryForList("SELECT * FROM "+ cafe + "" + "" + "");
+
+            //query to store the results of a cafe in the final
+            results =  jdbcTemplate.queryForList("SELECT * FROM "+ cafe + query_main_categories + query_sub_categories + query_budget);
         }
 
         return results;
